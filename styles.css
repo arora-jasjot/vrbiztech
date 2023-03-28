@@ -1,0 +1,993 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(249, 249, 249);
+    background: linear-gradient(180deg, rgba(249, 249, 249, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    padding: 20px 5% !important;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navs {
+    display: flex;
+    justify-content: end;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #013289
+}
+
+nav .navs .nav {
+    margin: 0 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav .navs .nav:hover {
+    color: #4154f1;
+}
+
+nav .logo {
+    width: 250px;
+    overflow: hidden;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+
+/* Welcome Section */
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    background: url(./assets/media/home-bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    padding-top: 85px;
+}
+
+#home .content-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#home .content-section .heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #012970;
+}
+
+#home .content-section .sub-heading {
+    color: #444444;
+    margin: 15px 0 0 0;
+    font-size: 26px;
+}
+
+#home .content-section .welcome-button {
+    margin-top: 30px;
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+    width: fit-content;
+    cursor: pointer;
+}
+
+#home .content-section .welcome-button .welcome-button-icon {
+    margin-left: 5px;
+    transition: all 200ms ease-in;
+}
+
+#home .content-section .welcome-button:hover .welcome-button-icon {
+    transform: translateX(5px);
+}
+
+#home .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+#home .image-section .image {
+    width: 100%;
+}
+
+
+/* About Section */
+
+#about {
+    width: 100%;
+}
+
+#about .main-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+#about .content-section {
+    width: 50%;
+    align-self: stretch;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#about .content-section .inner-content {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f9ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10%;
+}
+
+#about .content-section .inner-content .heading {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4154f1;
+    text-transform: uppercase;
+}
+
+#about .content-section .inner-content .content-main-line {
+    font-size: 20px;
+    font-weight: 700;
+    color: #012970;
+    margin: 20px 0;
+}
+
+#about .content-section .inner-content .content-more {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#about .image-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .image-section .image {
+    width: 100%;
+}
+
+#about .values {
+    padding: 5%;
+    padding-bottom: 2%;
+}
+
+.section-heading {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #4154f1;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+.section-sub-heading {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 900;
+    color: #012970;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+}
+
+#about .values .value-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#about .values .value-cards .card {
+    width: 100%;
+    align-self: stretch;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    margin: 10px;
+    text-align: center;
+    padding: 5% 2%;
+}
+
+#about .values .value-cards .card:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
+}
+
+#about .values .value-cards .card .card-heading {
+    font-size: 24px;
+    color: #012970;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 18px auto;
+}
+
+#about .values .value-cards .card .card-text {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    line-height: 24px;
+}
+
+#about .values .value-cards .card .card-image {
+    width: 100%;
+}
+
+#about .values .value-cards .card .card-image .image {
+    width: 200px;
+    transition: all 0.5s ease;
+}
+
+#about .values .value-cards .card:hover .image {
+    transform: scale(0.9);
+}
+
+#about .numbers {
+    padding: 0 5%;
+}
+
+#about .numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#about .numbers .card {
+    width: 100%;
+    align-self: stretch;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    margin: 10px;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .numbers .card .card-icon {
+    font-size: 40px;
+}
+
+#about .numbers .card:nth-child(4n-3) .card-icon {
+    color: #0b198f;
+}
+
+#about .numbers .card:nth-child(4n-2) .card-icon {
+    color: #ee6c20;
+}
+
+#about .numbers .card:nth-child(4n-1) .card-icon {
+    color: #15be56;
+}
+
+#about .numbers .card:nth-child(4n) .card-icon {
+    color: #bb0852;
+}
+
+#about .numbers .card .card-text {
+    padding-left: 20px;
+}
+
+#about .numbers .card .card-text .card-number {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #0b198f;
+    font-family: "Nunito", sans-serif;
+}
+
+#about .numbers .card .card-text .card-description {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+}
+
+
+/* Features Section */
+
+.features {
+    padding: 5%;
+}
+
+.features .inner-features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.features .inner-features .image-section {
+    width: 50%;
+}
+
+.features .inner-content .image-section .image {
+    width: 100%;
+}
+
+.features .inner-features .content-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features .inner-features .content-section .inner-features-content {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.features .inner-features .content-section .card {
+    width: 242px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    margin: 10px;
+    font-size: 16px;
+    color: #012970;
+    font-weight: 700;
+}
+
+.features .inner-features .content-section .card span {
+    font-size: 14px;
+    padding: 2px 5px;
+    background-color: #f6f9ff;
+    margin-right: 10px;
+    transition: all 0.5s ease;
+}
+
+.features .inner-features .content-section .card:hover span {
+    background-color: #4154f1;
+    color: white;
+}
+
+
+/* Services Section */
+
+#services {
+    padding: 5%;
+}
+
+#services .service-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+#services .service-cards .card {
+    width: calc(33% - 20px);
+    align-self: stretch;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    margin: 10px;
+    text-align: center;
+    padding: 5% 2%;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    color: #444444;
+    font-family: "Nunito", sans-serif;
+}
+
+#services .service-cards .card:hover {
+    color: white;
+}
+
+#services .service-cards .card:hover .card-image {
+    background-color: white !important;
+}
+
+#services .service-cards .card:nth-child(6n-5) {
+    border-bottom: 3px solid #2db6fa;
+}
+
+#services .service-cards .card:nth-child(6n-5) .card-image {
+    color: #2db6fa;
+    background-color: #2db6fa40;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+#services .service-cards .card:nth-child(6n-5):hover {
+    background-color: #2db6fa;
+}
+
+#services .service-cards .card:nth-child(6n-4) {
+    border-bottom: 3px solid #f68c09;
+}
+
+#services .service-cards .card:nth-child(6n-4) .card-image {
+    color: #f68c09;
+    background-color: #f68c0940;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#services .service-cards .card:nth-child(6n-4):hover {
+    background-color: #f68c09;
+}
+
+#services .service-cards .card:nth-child(6n-3) {
+    border-bottom: 3px solid #08da4e;
+}
+
+#services .service-cards .card:nth-child(6n-3) .card-image {
+    color: #08da4e;
+    background-color: #08da4e40;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#services .service-cards .card:nth-child(6n-3):hover {
+    background-color: #08da4e;
+}
+
+#services .service-cards .card:nth-child(6n-3):hover .card-image {
+    background-color: #fff;
+}
+
+#services .service-cards .card:nth-child(6n-2) {
+    border-bottom: 3px solid #e9222c;
+}
+
+#services .service-cards .card:nth-child(6n-2) .card-image {
+    color: #e9222c;
+    background-color: #e9222c40;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#services .service-cards .card:nth-child(6n-2):hover {
+    background-color: #e9222c;
+}
+
+#services .service-cards .card:nth-child(6n-2):hover .card-image {
+    background-color: #fff;
+}
+
+#services .service-cards .card:nth-child(6n-1) {
+    border-bottom: 3px solid #b50edf;
+}
+
+#services .service-cards .card:nth-child(6n-1) .card-image {
+    color: #b50edf;
+    background-color: #b50edf40;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#services .service-cards .card:nth-child(6n-1):hover {
+    background-color: #b50edf;
+}
+
+#services .service-cards .card:nth-child(6n-1):hover .card-image {
+    background-color: #fff;
+}
+
+#services .service-cards .card:nth-child(6n) {
+    border-bottom: 3px solid #f51f9c;
+}
+
+#services .service-cards .card:nth-child(6n) .card-image {
+    color: #f51f9c;
+    background-color: #f51f9c50;
+    width: fit-content;
+    margin: auto;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#services .service-cards .card:nth-child(6n):hover {
+    background-color: #f51f9c;
+}
+
+#services .service-cards .card .card-heading {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin: 15px auto;
+}
+
+#services .service-cards .card .card-text {
+    line-height: 24px;
+    font-size: 18px;
+}
+
+
+/* Prices Section */
+
+#prices {
+    padding: 5%;
+}
+
+#prices .price-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#prices .price-cards .card {
+    width: calc(25%-20px);
+    margin: 10px;
+    background-color: white;
+    align-self: stretch;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 30px 10px;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+#prices .price-cards .card:hover {
+    transform: scale(1.05);
+}
+
+#prices .price-cards .card .card-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#prices .price-cards .card .price {
+    color: #444444;
+    margin: 20px 0;
+}
+
+#prices .price-cards .card .price span {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#prices .price-cards .card .card-image {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#prices .price-cards .card .card-text {
+    color: #444444;
+    line-height: 26px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+#prices .price-cards .card .card-text s {
+    color: #bebebe;
+}
+
+#prices .price-cards .card:nth-child(4n-3) .card-heading {
+    color: #07d5c0;
+}
+
+#prices .price-cards .card:nth-child(4n-2) .card-heading {
+    color: #65c600;
+}
+
+#prices .price-cards .card:nth-child(4n-1) .card-heading {
+    color: #ff901c;
+}
+
+#prices .price-cards .card:nth-child(4n) .card-heading {
+    color: #ff0071;
+}
+
+#prices .price-cards .card .buy-button {
+    padding: 8px 40px 10px 40px;
+    border-radius: 50px;
+    color: #4154f1;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 1px solid #4154f1;
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#prices .price-cards .card .buy-button:hover {
+    background-color: #4154f1;
+    color: #fff;
+}
+
+
+/* FAQs Section */
+
+#faqs {
+    padding: 5%;
+}
+
+#faqs .faq-cards {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#faqs .faq-cards .card {
+    width: calc(50% - 30px);
+    align-self: start;
+    border: none;
+    font-family: "Nunito", sans-serif;
+    color: #333;
+    font-size: 18px;
+    margin: 15px;
+    position: relative;
+}
+
+#faqs .faq-cards .card .icon {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    transition: all 0.3s ease;
+}
+
+#faqs .faq-cards .question {
+    padding-bottom: 5px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#faqs .faq-cards .answer {
+    margin-top: 5px;
+    border-top: 1px solid #444444;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#faqs .faq-cards .answer .answer-inner {
+    padding: 10px 0;
+}
+
+#portfolio {
+    padding: 5%;
+}
+
+#portfolio .filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#portfolio .filters div {
+    padding: 8px 40px 10px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    transition: 0.3s;
+    width: fit-content;
+    cursor: pointer;
+    margin: 0 10px;
+    color: #444;
+    border: 1px solid transparent;
+}
+
+#portfolio .filters div.active {
+    color: #4154f1;
+    border: 1px solid #4154f1;
+}
+
+#portfolio .filters div:hover {
+    color: #4154f1;
+    border: 1px solid #4154f1;
+}
+
+#portfolio .portfolio-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .portfolio-cards .single-card {
+    width: fit-content;
+    margin: 10px;
+    display: none;
+}
+
+#portfolio .portfolio-cards .single-card .image {
+    width: 300px;
+}
+
+
+/* Contact Us */
+
+#contact {
+    padding: 5%;
+    font-family: "Nunito", sans-serif;
+}
+
+#contact .contact-content {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contact-content .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+#contact .contact-content .form-section {
+    width: 50%;
+    background-color: #fafbff;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 10px;
+}
+
+#contact .contact-content .content-section .contact-content-card {
+    width: calc(50% - 20px);
+    aspect-ratio: 1.2;
+    margin: 10px;
+    background-color: #fafbff;
+}
+
+#contact .contact-content .form-section input,
+#contact .contact-content .form-section textarea {
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+#contact .contact-content .form-section .form-input-1 {
+    width: calc(50% - 24px);
+}
+
+#contact .contact-content .form-section .form-input-2,
+#contact .contact-content .form-section textarea {
+    width: calc(100% - 20px);
+}
+
+#contact .contact-content .form-section .form-button {
+    padding: 8px 30px !important;
+    border-radius: 5px;
+    background-color: #4154f1;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+#contact .content-section .contact-content-card {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact .content-section .contact-content-card .contact-icon {
+    font-size: 2rem;
+    color: #4154f1;
+}
+
+#contact .content-section .contact-content-card .card-heading {
+    font-size: 20px;
+    color: #012970;
+    font-weight: 700;
+    margin: 15px 0 10px 0;
+    font-family: "Nunito", sans-serif;
+}
+
+#contact .content-section .contact-content-card .card-content {
+    line-height: 24px;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+}
+
+
+/* Footer-Section */
+
+#footer .newsletter {
+    padding: 50px 0;
+    background: #f6f9ff;
+    border-top: 1px solid #e1ecff;
+    text-align: center;
+}
+
+#footer .newsletter .heading {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    color: #012970;
+    font-family: "Nunito", sans-serif;
+}
+
+#footer .newsletter .input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#footer .newsletter .input-div input {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+}
+
+#footer .newsletter .input-div button {
+    display: block;
+    align-self: stretch;
+    margin-left: 10px;
+    padding: 8px 30px !important;
+    border-radius: 5px;
+    background-color: #4154f1;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    width: fit-content;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+#footer .footer-links {
+    background: url(./assets/media/footer-bg.png);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footer-links .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+#footer .footer-links .content .logo {
+    width: 100%;
+    max-width: 280px;
+    overflow: hidden;
+}
+
+#footer .footer-links .content .logo img {
+    width: 100%;
+}
+
+#footer .footer-links .content .about {
+    font-size: 14px;
+    line-height: 26px;
+    margin: 10px 0;
+    font-family: "Nunito", sans-serif;
+    color: #333;
+}
+
+#footer .footer-links .content .social-links {
+    font-size: 20px;
+    color: rgba(1, 41, 112, 0.5);
+}
+
+#footer .footer-links .content .social-links i {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+#footer .footer-links .content .social-links i:hover {
+    color: rgba(1, 41, 112, 1);
+}
+
+#footer .footer-links .useful-links {
+    font-family: "Nunito", sans-serif;
+}
+
+#footer .footer-links .useful-links .heading {
+    font-size: 20px;
+    color: #012970;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#footer .footer-links .useful-links .link {
+    margin: 15px 0;
+    color: rgba(1, 41, 112, 0.5);
+    font-size: 12px;
+}
+
+#footer .footer-links .useful-links span {
+    color: #013289;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#footer .footer-links .useful-links span:hover {
+    color: #4154f1;
+}
